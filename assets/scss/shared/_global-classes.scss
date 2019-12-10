@@ -1,3 +1,18 @@
+//sections general class
+.section-header {
+  .section-title {
+    font-size: 32px;
+    color: $primary-text-color;
+    font-family: $secondary-font;
+    margin-bottom: 22px;
+  }
+
+  .section-text {
+    color: $secondary-text-color;
+    font-size: 16px;
+  }
+}
+
 //colors
 .bg-color-success {
   background-color: $success-color;
@@ -18,6 +33,11 @@
   background-color: $orange-color;
 }
 
+//border radius
+.border-radius-10 {
+  border-radius: 10px;
+}
+
 //size (px)
 .size-16 {
   font-size: 16px !important;
@@ -35,4 +55,9 @@
 
 .pb-30 {
   padding-bottom: 30px;
+}
+
+//shadow
+.bg-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

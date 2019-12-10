@@ -1,0 +1,153 @@
+//footer
+
+#footer-top {
+  background-color: $secondary-black-color;
+  color: #fff;
+  font-family: $primary-font;
+  font-size: 14px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  .footer-img-logo {
+    margin-bottom: 15px;
+  }
+
+  .footer-top-title {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer-blog {
+    li {
+      margin-bottom: 12px;
+      // display: inline-block;
+      // width: 100%;
+
+      .footer-blog-item {
+        .footer-blog-img {
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .footer-search-input {
+    padding: 10px 105px 10px 15px;
+    width: 100%;
+    border: 0;
+    color: #777777;
+    height: 43px;
+  }
+
+  .footer-search-btn {
+    background-color: $primary-color;
+    color: #fff;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    padding: 6px 15px;
+    outline: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  ul.footer-social-icons {
+    li {
+      display: inline-block;
+      padding: 2px 3px;
+      a {
+        display: inline-block;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+
+        i{
+          margin: 0px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: block;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+
+      i {
+        font-size: 18px;
+        vertical-align: middle;
+        max-width: 30px;
+        width: 100%;
+        text-align: center;
+        margin-right: 5px;
+      }
+
+      p {
+        margin-bottom: 0px;
+      }
+
+      a.hover-padding:hover {
+        padding-left: 5px;
+      }
+
+      span.footer-blog-date {
+        font-size: 12px;
+        color: $secondary-text-color;
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+#footer-bottom {
+  background-color: $primary-black-color;
+  font-size: 14px;
+  color: #fff;
+  padding: 30px 0px;
+
+  .footer-bottom-copyright {
+    margin: 0px;
+  }
+
+  .footer-bottom-list {
+    // text-align: end;
+    ul {
+      display: inline-block;
+      li {
+        margin-left: 10px;
+        display: inline-block;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

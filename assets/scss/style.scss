@@ -1,0 +1,17 @@
+// Global variables
+@import "shared/variables";
+@import "shared/mixings";
+@import "shared/fonts";
+
+// Global classes
+@import "shared/global-classes";
+
+// Components
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/index";
+
+// Plugins
+@import "../plugins/themify-icons/assets/themify-icons.min.css"

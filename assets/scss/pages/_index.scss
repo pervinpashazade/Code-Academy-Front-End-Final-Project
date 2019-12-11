@@ -59,5 +59,26 @@ ul {
 }
 
 #our-blog {
-  
+  .item-box {
+    .item-box-img-wrap {
+      position: relative;
+      a.item-box-img-overlay::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        background-color: black;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+
+    &:hover{
+      a.item-box-img-overlay::after{
+        opacity: 0.5;
+      }
+    }
+  }
 }

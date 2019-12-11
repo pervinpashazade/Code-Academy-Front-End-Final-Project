@@ -738,4 +738,25 @@ ul {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+#our-blog .item-box .item-box-img-wrap {
+  position: relative;
+}
+
+#our-blog .item-box .item-box-img-wrap a.item-box-img-overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#our-blog .item-box:hover a.item-box-img-overlay::after {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,25 @@
+// categories & our client
+.category-item {
+  a {
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    i {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+  }
+}
+
 // item-box css
 .item-box {
   background-color: #fff;

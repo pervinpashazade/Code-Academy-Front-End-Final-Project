@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: green;
+  // background-color: green;
   font-family: $secondary-font;
 }
 
@@ -23,27 +23,6 @@ ul {
 
 #categories-section {
   background-color: #fff;
-
-  .category-item {
-    a {
-      border-radius: 5px;
-      display: block;
-      text-align: center;
-      padding: 30px 20px;
-      color: #fff;
-
-      &:hover {
-        text-decoration: none;
-        color: #fff;
-      }
-
-      i {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 30px;
-      }
-    }
-  }
 }
 
 #upcoming-events {
@@ -81,4 +60,8 @@ ul {
       }
     }
   }
+}
+
+#our-client{
+
 }

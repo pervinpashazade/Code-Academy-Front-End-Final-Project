@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,400,500,700,900&display=swap&subset=latin-ext");
 @import url(c:\Users\User\Desktop\Front-end Project\assets\plugins\themify-icons\assets\themify-icons.min.css);
+.category-item a {
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+.category-item a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.category-item a i {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
 .item-box {
   background-color: #fff;
 }
@@ -687,7 +706,6 @@
 }
 
 body {
-  background-color: green;
   font-family: "Rubik", sans-serif;
 }
 
@@ -709,25 +727,6 @@ ul {
 
 #categories-section {
   background-color: #fff;
-}
-
-#categories-section .category-item a {
-  border-radius: 5px;
-  display: block;
-  text-align: center;
-  padding: 30px 20px;
-  color: #fff;
-}
-
-#categories-section .category-item a:hover {
-  text-decoration: none;
-  color: #fff;
-}
-
-#categories-section .category-item a i {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 30px;
 }
 
 #upcoming-events {

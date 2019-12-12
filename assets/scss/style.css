@@ -218,6 +218,10 @@
   padding-bottom: 50px;
 }
 
+.pt-50 {
+  padding-top: 50px;
+}
+
 .pb-30 {
   padding-bottom: 30px;
 }
@@ -761,6 +765,15 @@ ul {
 
 #our-blog .item-box:hover a.item-box-img-overlay::after {
   opacity: 0.5;
+}
+
+#our-blog .btn-wrapper button {
+  color: #fff;
+  padding: 12px 30px;
+}
+
+#our-blog .btn-wrapper button i {
+  margin-left: 5px;
 }
 
 #get-started {

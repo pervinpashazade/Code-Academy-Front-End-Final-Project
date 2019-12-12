@@ -37,6 +37,65 @@ ul {
   }
 }
 
+#our-teachers {
+  // background-image: url("../images/teacher_bg.jpg");
+  background-color: green;
+
+  .profile-card {
+    transition: all 0.5s;
+    
+
+
+    .profile-img-wrapper {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      transition: all 0.5s ease-in-out;
+
+      .profile-img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+
+      }
+    }
+
+    .profile-info {
+      width: 100%;
+      background-color: #fff;
+      padding: 15px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      h5 {
+        display: inline-block;
+        color: $primary-text-color;
+      }
+      span {
+        display: block;
+        color: $secondary-text-color;
+      }
+    }
+
+    &:hover {
+      .profile-img-wrapper::after {
+        content: "";
+        position: absolute;
+        left: 0;
+   
+        top: 0;
+       
+        opacity: 0.5;
+        background-color: black;
+        transition: all 0.5s ease-in-out;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}
+
 #our-blog {
   .item-box {
     .item-box-img-wrap {
@@ -61,12 +120,12 @@ ul {
     }
   }
 
-  .btn-wrapper{
-    button{
+  .btn-wrapper {
+    button {
       color: #fff;
       padding: 12px 30px;
 
-      i{
+      i {
         margin-left: 5px;
       }
     }

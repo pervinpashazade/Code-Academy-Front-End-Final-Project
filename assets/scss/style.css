@@ -746,6 +746,62 @@ ul {
           transform: scale(1.1);
 }
 
+#our-teachers {
+  background-color: green;
+}
+
+#our-teachers .profile-card {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-teachers .profile-card .profile-img-wrapper {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#our-teachers .profile-card .profile-img-wrapper .profile-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#our-teachers .profile-card .profile-info {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#our-teachers .profile-card .profile-info h5 {
+  display: inline-block;
+  color: #292b2c;
+}
+
+#our-teachers .profile-card .profile-info span {
+  display: block;
+  color: #888888;
+}
+
+#our-teachers .profile-card:hover .profile-img-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  background-color: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 #our-blog .item-box .item-box-img-wrap {
   position: relative;
 }

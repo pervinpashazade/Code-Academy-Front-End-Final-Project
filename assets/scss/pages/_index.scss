@@ -38,26 +38,79 @@ ul {
 }
 
 #our-teachers {
-  // background-image: url("../images/teacher_bg.jpg");
-  background-color: green;
+  background-image: url("../images/teacher_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   opacity: 1;
+  //   background-color: $overlay-color;
+  //   transition: all 0.5s ease-in-out;
+  //   border-bottom-left-radius: 10px;
+  //   border-bottom-right-radius: 10px;
+  // }
+
+  .section-header {
+    .section-title {
+      color: #fff;
+    }
+
+    .section-text {
+      color: #fff;
+    }
+  }
 
   .profile-card {
-    transition: all 0.5s;
-    
-
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
     .profile-img-wrapper {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       position: relative;
-      transition: all 0.5s ease-in-out;
+      overflow: hidden;
 
       .profile-img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         width: 100%;
-        transition: all 0.5s ease-in-out;
+      }
+    }
 
+    .profile-img-wrapper::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      background-color: black;
+      transition: all 0.5s ease-in-out;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    &:hover {
+      .profile-img-wrapper::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0.5;
+        background-color: black;
+        transition: all 0.5s ease-in-out;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
       }
     }
 
@@ -75,22 +128,6 @@ ul {
       span {
         display: block;
         color: $secondary-text-color;
-      }
-    }
-
-    &:hover {
-      .profile-img-wrapper::after {
-        content: "";
-        position: absolute;
-        left: 0;
-   
-        top: 0;
-       
-        opacity: 0.5;
-        background-color: black;
-        transition: all 0.5s ease-in-out;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
       }
     }
   }

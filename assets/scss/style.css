@@ -776,4 +776,15 @@ ul {
 #get-started p {
   margin: 0px;
 }
+
+#get-started .button-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#get-started .button-wrapper .btn-outline-light {
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  margin: auto 0px;
+}
 /*# sourceMappingURL=style.css.map */

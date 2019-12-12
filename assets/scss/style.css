@@ -850,7 +850,15 @@ ul {
 
 #our-teachers .profile-card .profile-info h5 {
   display: inline-block;
+}
+
+#our-teachers .profile-card .profile-info h5 a {
   color: #292b2c;
+}
+
+#our-teachers .profile-card .profile-info h5 a:hover {
+  color: #FFBC09;
+  text-decoration: none;
 }
 
 #our-teachers .profile-card .profile-info span {

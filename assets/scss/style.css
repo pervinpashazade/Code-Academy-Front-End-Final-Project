@@ -179,6 +179,30 @@
   background-color: rgba(7, 41, 77, 0.7);
 }
 
+.section-overlay-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-overlay-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  background-color: rgba(7, 41, 77, 0.9);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .color-white {
   color: #fff;
 }
@@ -746,6 +770,28 @@ ul {
   background-color: #fff;
 }
 
+#counter-section {
+  position: relative;
+}
+
+#counter-section .section-overlay-img {
+  background-image: url("../images/counter_bg.jpg");
+  background-size: cover;
+}
+
+#counter-section .section-overlay-img::after {
+  background-color: rgba(7, 41, 77, 0.7);
+}
+
+#counter-section .counter-item .counter-content h3 {
+  color: #fff;
+  margin: 13px 0px;
+}
+
+#counter-section .counter-item .counter-content span {
+  color: #fff;
+}
+
 #upcoming-events {
   background-color: #fff;
 }
@@ -761,27 +807,6 @@ ul {
 
 #our-teachers .section-overlay-img {
   background-image: url("../images/teacher_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#our-teachers .section-overlay-img::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 1;
-  background-color: rgba(7, 41, 77, 0.9);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 #our-teachers .section-header .section-title {

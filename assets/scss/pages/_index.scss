@@ -25,6 +25,31 @@ ul {
   background-color: #fff;
 }
 
+#counter-section{
+  position: relative;
+
+  .section-overlay-img{
+    background-image: url("../images/counter_bg.jpg");
+    background-size: cover;
+
+    &::after{
+      background-color: $overlay-color;
+    }
+  }
+
+  .counter-item{
+    .counter-content{
+      h3{
+        color: #fff;
+        margin: 13px 0px;
+      }
+      span{
+        color: #fff;
+      };
+    }
+  }
+}
+
 #upcoming-events {
   background-color: #fff;
 
@@ -42,27 +67,6 @@ ul {
 
   .section-overlay-img {
     background-image: url("../images/teacher_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      opacity: 1;
-      background-color: rgba(7, 41, 77, 0.9);
-      transition: all 0.5s ease-in-out;
-    }
   }
 
   .section-header {

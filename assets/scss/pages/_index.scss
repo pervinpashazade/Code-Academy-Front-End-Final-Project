@@ -38,9 +38,9 @@ ul {
 }
 
 #our-teachers {
-position: relative;
+  position: relative;
 
-  .section-overlay-img{
+  .section-overlay-img {
     background-image: url("../images/teacher_bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -52,19 +52,18 @@ position: relative;
     top: 0;
     left: 0;
 
-    &::after{
+    &::after {
       content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        opacity: 1;
-        background-color: rgba(7, 41, 77, 0.90);
-        transition: all 0.5s ease-in-out;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 1;
+      background-color: rgba(7, 41, 77, 0.9);
+      transition: all 0.5s ease-in-out;
     }
   }
-
 
   .section-header {
     .section-title {
@@ -77,7 +76,7 @@ position: relative;
   }
 
   .profile-card {
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     .profile-img-wrapper {
       border-top-left-radius: 10px;
@@ -132,10 +131,10 @@ position: relative;
       h5 {
         display: inline-block;
 
-        a{
+        a {
           color: $primary-text-color;
 
-          &:hover{
+          &:hover {
             color: $primary-color;
             text-decoration: none;
           }
@@ -144,6 +143,70 @@ position: relative;
       span {
         display: block;
         color: $secondary-text-color;
+      }
+    }
+  }
+}
+
+#testimonial {
+  .item-box-img-wrap {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .testimonial-box {
+    background-color: #fff;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px 30px 30px 55px;
+    margin: 5px 5px 5px 80px;
+    position: relative;
+    z-index: 1;
+    width: 470px;
+
+    &::before {
+      content: "\f10e";
+      position: absolute;
+      right: 40px;
+      top: 0;
+      font-family: "Font Awesome 5 Free";
+      font-size: 190px;
+      line-height: normal;
+      font-weight: 900;
+      z-index: -1;
+      color: rgba(0, 0, 0, 0.02);
+    }
+
+    .testimonial-img-wrapper {
+      position: absolute;
+      top: 15%;
+      left: -13%;
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    .testimonial-content {
+      .testimonial-author {
+        margin-bottom: 6px;
+
+        h6 {
+          color: $primary-text-color;
+        }
+
+        span {
+          color: $primary-color;
+          font-style: italic;
+          font-weight: 400;
+          font-family: $primary-font;
+        }
+      }
+
+      .testimonial-text {
+        p {
+          margin-bottom: 0px;
+          font-size: 16px;
+          color: $secondary-text-color;
+        }
       }
     }
   }

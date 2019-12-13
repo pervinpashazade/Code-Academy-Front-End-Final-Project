@@ -57,8 +57,8 @@ $(document).ready(function () {
     //nav header search click open end
 
 
-    // owl carousel start
-    $('.owl-carousel').owlCarousel({
+    // categories carousel start
+    $('#categories-section .owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         dots: false,
@@ -75,6 +75,46 @@ $(document).ready(function () {
             }
         }
     })
-    // owl carousel end
+    // categories carousel end
+
+        // our client carousel start
+        $('#our-client .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            // nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+        // our client carousel end
+
+    //testimonial section carousel start
+    $('#testimonial .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: false,
+        // nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+//testimonial section carousel end
 
 });

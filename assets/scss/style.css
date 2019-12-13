@@ -871,6 +871,35 @@ ul {
           transform: scale(1.1);
 }
 
+#application-form {
+  position: relative;
+}
+
+#application-form .section-overlay-img {
+  background-image: url("../images/pattern_bg.png");
+  background-size: cover;
+}
+
+#application-form .application-form-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#application-form .application-form-wrapper .form-header h2 {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}
+
+#application-form .application-form-wrapper .form-header h2 span {
+  color: #FFBC09;
+}
+
+#application-form .application-form-wrapper .form-header p {
+  color: #fff;
+}
+
 #our-teachers {
   position: relative;
 }

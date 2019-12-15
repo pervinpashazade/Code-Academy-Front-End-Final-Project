@@ -1,0 +1,44 @@
+#courses-page {
+  #counter-section {
+    .section-overlay-img {
+      background-image: url("../images/about_bg.jpg");
+      background-size: cover;
+
+      &::after {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .counter-content {
+      h3 {
+        font-size: 36px;
+        margin: 0;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+
+      .breadcrumb {
+        background-color: transparent;
+
+        li {
+          color: #fff;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+
+        .breadcrumb-item {
+          &::before {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

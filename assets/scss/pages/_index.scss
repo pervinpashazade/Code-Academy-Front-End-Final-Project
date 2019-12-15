@@ -21,26 +21,6 @@ ul {
   padding: 0px;
 }
 
-.scroll-top {
-  background-color: #2f2f2f;
-  border-radius: 100%;
-  width: 40px;
-  bottom: 20px;
-  color: #ffffff;
-  font-size: 22px;
-  height: 40px;
-  line-height: 40px;
-  position: fixed;
-  right: 20px;
-  text-align: center;
-  z-index: 99;
-
-  &:hover{
-    background-color: $primary-color;
-    color: #fff;
-  }
-}
-
 #services-section {
   .service-item {
     background-color: #fff;
@@ -236,10 +216,35 @@ ul {
     }
   }
 
+  // .btn-warning {
+  //   border: 2px solid #ffbc09;
+  //   color: #ffffff !important;
+  //   padding: 12px 30px;
+  // }
+
   .btn-warning {
-    border: 2px solid #ffbc09;
-    color: #ffffff !important;
-    padding: 12px 30px;
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    padding: 13px 32px;
+    position: relative;
+    &::before {
+      content: "";
+      background-color: rgba(247, 247, 247, 0.75);
+      height: 100%;
+      width: 32px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -72px;
+      -webkit-transform: skewX(-45deg) translateX(0);
+      transform: skewX(-45deg) translateX(0);
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover::before {
+      -webkit-transform: skewX(-45deg) translateX(40em);
+      transform: skewX(-45deg) translateX(620px);
+    }
   }
 }
 
@@ -670,9 +675,47 @@ ul {
     height: 100%;
 
     .btn-outline-light {
+      padding: 10px 35px;
       border: 2px solid #fff;
-      padding: 10px 30px;
-      margin: auto 0px;
+      background-color: transparent;
+      position: relative;
+      color: #fff;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 0;
+        z-index: -1;
+        content: "";
+        background-color: $white;
+      }
+      &::after {
+        content: "Get Started";
+        position: absolute;
+        height: 0%;
+        left: -25%;
+        top: 24%;
+        width: 150%;
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover::before {
+        left: 0%;
+        right: initial;
+        width: 100%;
+        z-index: 1;
+      }
+      &:hover::after {
+        z-index: 1;
+        color: $primary-color;
+      }
     }
   }
 }

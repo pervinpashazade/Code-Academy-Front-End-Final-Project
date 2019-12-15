@@ -118,22 +118,8 @@ $(document).ready(function () {
     //testimonial section carousel end
 
 
-    //scroll to top js Start
-    // var scrollTopBtn = document.querySelector(".scroll-top");
 
-    // window.onscroll = function () { scrollFunction() };
-
-    // function scrollFunction() {
-    //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    //         scrollTopBtn.style.display = "block";
-    //     } else {
-    //         scrollTopBtn.style.display = "none";
-    //     }
-    // }
-    //scroll to top js end
-
-
-    // sticky nav bar js Start
+    // sticky nav bar & scroll to top js Start
 
     var scrollTopBtn = document.querySelector(".scroll-top");
 
@@ -149,6 +135,15 @@ $(document).ready(function () {
             scrollTopBtn.style.display = "none";
         }
     }
-    // sticky nav bar js End
+    // sticky nav bar & scroll to top js End
 
+
+    // count up js Start
+    if ($(".counter".length)) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    }
+    // count up js End
 });

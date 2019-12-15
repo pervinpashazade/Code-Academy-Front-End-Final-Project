@@ -21,6 +21,26 @@ ul {
   padding: 0px;
 }
 
+.scroll-top {
+  background-color: #2f2f2f;
+  border-radius: 100%;
+  width: 40px;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  z-index: 99;
+
+  &:hover{
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
 #services-section {
   .service-item {
     background-color: #fff;

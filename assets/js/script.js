@@ -25,6 +25,7 @@ $(document).ready(function () {
         $(this).next().css("opacity", "0")
     });
 
+    
     $(".sub-dropdown").hover(function () {
         $(this).css("opacity", "1")
     }, function () {

@@ -93,6 +93,62 @@ ul {
   background-color: #fff;
 }
 
+#our-courses {
+  .item-box {
+    margin-bottom: 30px;
+
+    .item-box-footer {
+      .item-box-footer-list {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          transition: all 0.5s ease-in-out;
+        }
+
+        a {
+          text-decoration: none;
+
+          .item-footer-img {
+            border-radius: 50%;
+          }
+
+          .item-footer-profile {
+            margin-left: 10px;
+            color: $primary-text-color;
+            font-size: 16px;
+            transition: all 0.5s ease-in-out;
+          }
+
+          &:hover {
+            .item-footer-profile {
+              color: $primary-color;
+            }
+          }
+        }
+
+        .course-price {
+          margin: 0;
+          padding: 5px 15px;
+          display: block;
+        }
+      }
+    }
+
+    &:hover {
+      .item-box-img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .btn-warning {
+    border: 2px solid #ffbc09;
+    color: #ffffff !important;
+    padding: 12px 30px;
+  }
+}
+
 #counter-section {
   position: relative;
 

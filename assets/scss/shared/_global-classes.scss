@@ -207,6 +207,14 @@
   color: #fff;
 }
 
+.color-success{
+  color: $success-color;
+}
+
+.color-danger{
+  color: $danger-color;
+}
+
 // background colors
 .bg-color-success {
   background-color: $success-color;
@@ -247,12 +255,16 @@
   padding: 100px 0px;
 }
 
-.pb-50 {
-  padding-bottom: 50px;
+.pt-30{
+  padding-top: 30px;
 }
 
 .pt-50{
   padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
 }
 
 .pb-30 {

@@ -1443,4 +1443,41 @@ ul {
   padding: 10px 30px;
   margin: auto 0px;
 }
+
+#about-page #counter-section .section-overlay-img {
+  background-image: url("../images/about_bg.jpg");
+  background-size: cover;
+}
+
+#about-page #counter-section .section-overlay-img::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about-page #counter-section .counter-content h3 {
+  font-size: 36px;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#about-page #counter-section .counter-content .breadcrumb {
+  background-color: transparent;
+}
+
+#about-page #counter-section .counter-content .breadcrumb li {
+  color: #fff;
+}
+
+#about-page #counter-section .counter-content .breadcrumb li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#about-page #counter-section .counter-content .breadcrumb li a:hover {
+  color: #FFBC09;
+}
+
+#about-page #counter-section .counter-content .breadcrumb .breadcrumb-item::before {
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

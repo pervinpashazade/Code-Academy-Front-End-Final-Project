@@ -20,23 +20,23 @@
       .breadcrumb {
         background-color: transparent;
 
-        li{
+        li {
+          color: #fff;
+
+          a {
             color: #fff;
+            text-decoration: none;
 
-            a{
-                color: #fff;
-                text-decoration: none;
-
-                &:hover{
-                    color: $primary-color;
-                }
+            &:hover {
+              color: $primary-color;
             }
+          }
         }
 
-        .breadcrumb-item{
-            &::before{
-                color: #fff;
-            }
+        .breadcrumb-item {
+          &::before {
+            color: #fff;
+          }
         }
       }
     }

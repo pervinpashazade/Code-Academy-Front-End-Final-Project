@@ -77,25 +77,25 @@ $(document).ready(function () {
     })
     // categories carousel end
 
-        // our client carousel start
-        $('#our-client .owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            // nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 6
-                }
+    // our client carousel start
+    $('#our-client .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        // nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
             }
-        })
-        // our client carousel end
+        }
+    })
+    // our client carousel end
 
     //testimonial section carousel start
     $('#testimonial .owl-carousel').owlCarousel({
@@ -115,20 +115,38 @@ $(document).ready(function () {
             }
         }
     })
-//testimonial section carousel end
+    //testimonial section carousel end
 
-//scroll to top js Start
 
-var scrollTopBtn = document.querySelector(".scroll-top");
+    //scroll to top js Start
+    var scrollTopBtn = document.querySelector(".scroll-top");
 
-window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollTopBtn.style.display = "block";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
-}
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+    //scroll to top js end
+
+
+    // sticky nav bar js Start
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+            $(".navbar").addClass("fixed-top").addClass("bg-color-white").addClass("bg-shadow");
+        }
+        else if ($(".navbar").hasClass("fixed-top")) {
+            $(".navbar").removeClass("fixed-top").removeClass("bg-color-white").removeClass("bg-shadow")
+        } else {
+
+        }
+    }
+    // sticky nav bar js End
 
 });

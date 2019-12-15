@@ -247,6 +247,10 @@ html {
   background-color: #f7f7f7;
 }
 
+.bg-color-white {
+  background-color: #fff;
+}
+
 .border-radius-10 {
   border-radius: 10px;
 }
@@ -278,6 +282,27 @@ html {
 .bg-shadow {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb li {
+  color: #fff;
+}
+
+.breadcrumb li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  color: #FFBC09;
+}
+
+.breadcrumb .breadcrumb-item::before {
+  color: #fff;
 }
 
 #header-alert .alert-danger {
@@ -1515,6 +1540,43 @@ ul {
 }
 
 #courses-page #counter-section .counter-content .breadcrumb .breadcrumb-item::before {
+  color: #fff;
+}
+
+#contact-page #counter-section .section-overlay-img {
+  background-image: url("../images/about_bg.jpg");
+  background-size: cover;
+}
+
+#contact-page #counter-section .section-overlay-img::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contact-page #counter-section .counter-content h3 {
+  font-size: 36px;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#contact-page #counter-section .counter-content .breadcrumb {
+  background-color: transparent;
+}
+
+#contact-page #counter-section .counter-content .breadcrumb li {
+  color: #fff;
+}
+
+#contact-page #counter-section .counter-content .breadcrumb li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact-page #counter-section .counter-content .breadcrumb li a:hover {
+  color: #FFBC09;
+}
+
+#contact-page #counter-section .counter-content .breadcrumb .breadcrumb-item::before {
   color: #fff;
 }
 

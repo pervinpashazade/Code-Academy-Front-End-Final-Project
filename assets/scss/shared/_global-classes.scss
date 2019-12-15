@@ -172,14 +172,13 @@ html {
 }
 
 // section overlay (opacity)
-.section-overlay{
+.section-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   background-color: $overlay-color;
-  
 }
 
 // section overlay image (background)
@@ -211,11 +210,11 @@ html {
   color: #fff;
 }
 
-.color-success{
+.color-success {
   color: $success-color;
 }
 
-.color-danger{
+.color-danger {
   color: $danger-color;
 }
 
@@ -243,6 +242,10 @@ html {
   background-color: #f7f7f7;
 }
 
+.bg-color-white {
+  background-color: #fff;
+}
+
 //border radius
 .border-radius-10 {
   border-radius: 10px;
@@ -259,11 +262,11 @@ html {
   padding: 100px 0px;
 }
 
-.pt-30{
+.pt-30 {
   padding-top: 30px;
 }
 
-.pt-50{
+.pt-50 {
   padding-top: 50px;
 }
 
@@ -278,4 +281,29 @@ html {
 //shadow
 .bg-shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+//breadcrumb
+
+.breadcrumb {
+  background-color: transparent;
+
+  li {
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .breadcrumb-item {
+    &::before {
+      color: #fff;
+    }
+  }
 }

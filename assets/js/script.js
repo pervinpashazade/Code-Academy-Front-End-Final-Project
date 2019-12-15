@@ -119,32 +119,34 @@ $(document).ready(function () {
 
 
     //scroll to top js Start
-    var scrollTopBtn = document.querySelector(".scroll-top");
+    // var scrollTopBtn = document.querySelector(".scroll-top");
 
-    window.onscroll = function () { scrollFunction() };
+    // window.onscroll = function () { scrollFunction() };
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollTopBtn.style.display = "block";
-        } else {
-            scrollTopBtn.style.display = "none";
-        }
-    }
+    // function scrollFunction() {
+    //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //         scrollTopBtn.style.display = "block";
+    //     } else {
+    //         scrollTopBtn.style.display = "none";
+    //     }
+    // }
     //scroll to top js end
 
 
     // sticky nav bar js Start
+
+    var scrollTopBtn = document.querySelector(".scroll-top");
 
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
         if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
             $(".navbar").addClass("fixed-top").addClass("bg-color-white").addClass("bg-shadow");
+            scrollTopBtn.style.display = "block";
         }
         else if ($(".navbar").hasClass("fixed-top")) {
             $(".navbar").removeClass("fixed-top").removeClass("bg-color-white").removeClass("bg-shadow")
-        } else {
-
+            scrollTopBtn.style.display = "none";
         }
     }
     // sticky nav bar js End

@@ -305,6 +305,11 @@ html {
   color: #fff;
 }
 
+.nav {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 #header-alert .alert-danger {
   margin-bottom: 0px;
   color: white;

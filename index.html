@@ -538,6 +538,7 @@
         <!-- Section Application Form Start -->
         <section id="application-form">
             <div class="container">
+                <div class="section-overlay-color"></div>
                 <div class="section-overlay-img"></div>
 
                 <div class="row">
@@ -553,14 +554,54 @@
                                     anything hidden in the middle of text
                                 </p>
                             </div>
-                            <form id="application-form">
+                            <form id="application-form-submit">
                                 <div class="row">
-                                    <div class="col-md-6"></div>
+                                    <!-- Name -->
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control form-input" placeholder="Enter Name *"
+                                            required>
+                                    </div>
+                                    <!-- Email -->
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control form-input" placeholder="Enter Email *"
+                                            required>
+                                    </div>
+                                    <!-- Phone No -->
+                                    <div class="form-group col-md-6">
+                                        <input type="phone" class="form-control form-input"
+                                            placeholder="Enter Phone No *" required>
+                                    </div>
+                                    <!-- Select -->
+                                    <div class="form-group col-md-6">
+                                        <div class="form-select-wrap">
+                                            <select class="form-control form-input">
+                                                <option>Select Course</option>
+                                                <option>Course</option>
+                                                <option>Course</option>
+                                                <option>Course</option>
+                                                <option>Course</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Text Area -->
+                                    <div class="form-group col-sm-12">
+                                        <textarea required="required" placeholder="Message *" class="form-control"
+                                            rows="4"></textarea>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <div class="col-md-12">
+                                        <button type="submit" title="Submit Your Message!" class="btn btn-warning"
+                                            name="submit">Register Now</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="text-center animation animated fadeInRight">
+                            <img src="assets/images/girl_img.png" alt="girl_img">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1095,6 +1136,7 @@
             </div>
         </section>
     </footer>
+    <!--footer end-->
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
